@@ -35,10 +35,15 @@ hint - you should be looking at the stage key inside of the objects
 
 function getFinals (data){
   let finalsOnly = data.filter(function(item){
+
+    // used .filter() if this is true, it will be included in the array
     return item.Stage === 'Final';
+
   });
+
     return finalsOnly;
 }
+
 console.log(getFinals(fifaData));
 
 
